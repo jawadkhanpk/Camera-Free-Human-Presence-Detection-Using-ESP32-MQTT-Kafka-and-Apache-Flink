@@ -19,32 +19,6 @@ The project demonstrates the complete lifecycle of IoT data:
 5. Real-Time Visualization
 
 ---
-
-## System Architecture
-
-![System Architecture](docs/system_architecture.png)
-
-The workflow consists of:
-
-```text
-ESP32 + Sensors
-        │
-        ▼
-      MQTT
-        │
-        ▼
- Apache Kafka
-        │
-        ▼
- Apache Flink
-        │
-        ▼
- Occupancy Detection
-        │
-        ▼
- Grafana / IoTDB
-```
-
 ---
 
 ## Hardware Platform
@@ -60,10 +34,13 @@ The system is built around an ESP32 microcontroller and multiple I2C-based envir
 | RPR-0521RS | Illuminance and Infrared Measurement |
 
 ### Hardware Setup
-
-![Hardware Setup](docs/hardware_setup.png)
+<img width="888" height="777" alt="image" src="https://github.com/user-attachments/assets/4d6be2c8-3d6c-46a3-80d5-e2b7415d227a" />
 
 ---
+
+
+### Sensors Threshold and Usage
+<img width="1057" height="1144" alt="Screenshot 2026-06-06 at 5 11 30 AM" src="https://github.com/user-attachments/assets/21331e1f-fff0-427c-ae76-973bc01e34e7" />
 
 # Project Objectives
 
@@ -85,8 +62,7 @@ Implemented capabilities:
 * CSV data logging
 
 ### Sample Sensor Output
-
-![Sensor Output](docs/sensor_output.png)
+<img width="402" height="242" alt="image" src="https://github.com/user-attachments/assets/7e5f36fa-7038-4235-8c9e-6e13529cce1d" />
 
 ---
 
@@ -102,12 +78,6 @@ Implemented capabilities:
 * Threshold Detection
 * Event-Based Communication
 * LED Status Control
-
-### Communication Workflow
-
-![Communication Workflow](docs/communication_workflow.png)
-
----
 
 ## Objective 3 — Stream Analytics and Human Presence Detection
 
@@ -137,7 +107,7 @@ When environmental conditions satisfy predefined thresholds:
 
 ### Human Presence Detection Result
 
-![Human Presence Detection](docs/human_presence_detection.png)
+<img width="444" height="464" alt="image" src="https://github.com/user-attachments/assets/98078408-8358-422d-bea9-d296ab1ac41e" />
 
 ---
 
@@ -154,8 +124,7 @@ Visualized data includes:
 * IoTDB Aggregation Results
 
 ### Grafana Dashboard
-
-![Grafana Dashboard](docs/grafana_dashboard.png)
+<img width="454" height="596" alt="image" src="https://github.com/user-attachments/assets/693201a7-9aa6-4136-a1f7-e08c1726b268" />
 
 ---
 
@@ -170,13 +139,6 @@ Compared techniques:
 * Minimum Values
 * Maximum Values
 * IoTDB Aggregation
-
-### Comparison Dashboard
-
-![Analytics Comparison](docs/analytics_comparison.png)
-
-The comparison demonstrates how stream-processing analytics and database-level aggregation can produce slightly different visual representations while using the same source data.
-
 ---
 
 # Future Enhancements
@@ -188,9 +150,7 @@ Future improvements may include:
 * PIR (Passive Infrared) Sensors
 * mmWave Radar Sensors
 * Ultrasonic Sensors
-* Sensor Fusion Techniques
 * Machine Learning-Based Occupancy Detection
-* Cloud Deployment
 * Automated Alert Systems
 
 A multi-sensor approach can significantly improve detection accuracy and reduce false occupancy events.
@@ -226,39 +186,6 @@ A multi-sensor approach can significantly improve detection accuracy and reduce 
 
 * Python
 * MicroPython
-
----
-
-# Repository Structure
-
-```text
-Human-Detection-Without-Camera-Using-ESP32-and-Environmental-Sensors
-│
-├── docs/
-│   ├── hardware_setup.png
-│   ├── system_architecture.png
-│   ├── sensor_output.png
-│   ├── communication_workflow.png
-│   ├── human_presence_detection.png
-│   ├── grafana_dashboard.png
-│   └── analytics_comparison.png
-│
-├── firmware/
-│   ├── sensor_acquisition/
-│   ├── mqtt_publisher/
-│   └── mqtt_subscriber/
-│
-├── analytics/
-│   ├── kafka_processing/
-│   ├── flink_stream_analytics/
-│   └── occupancy_detection/
-│
-├── dashboards/
-│
-├── sample_data/
-│
-└── README.md
-```
 
 ---
 
