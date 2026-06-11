@@ -162,7 +162,6 @@ A multi-sensor approach can significantly improve detection accuracy and reduce 
 ## Embedded Systems
 
 * ESP32
-* MicroPython
 * ESP-IDF
 
 ## Messaging
