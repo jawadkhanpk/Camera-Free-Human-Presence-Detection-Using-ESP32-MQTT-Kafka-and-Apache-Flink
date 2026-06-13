@@ -124,7 +124,7 @@ Visualized data includes:
 * IoTDB Aggregation Results
 
 ### Grafana Dashboard
-<img width="1430" height="2227" alt="Screenshot 2026-06-13 at 10 45 01 PM" src="https://github.com/user-attachments/assets/4703d58e-7399-4ab4-9f94-d8bd4cde2517" />
+<img width="1432" height="2223" alt="Screenshot 2026-06-13 at 10 54 02 PM" src="https://github.com/user-attachments/assets/12cb9a9f-57d3-442b-9802-be8077a4fe99" />
 
 
 ---
